@@ -8,6 +8,12 @@ function App() {
         <main>
           <Dictionary />
         </main>
+        <footer>
+          <a href="https://github.com/cathdxn/dictionary-react">
+            Open-sourced code
+          </a>{" "}
+          by Catherine Dixon
+        </footer>
       </div>
     </div>
   );
