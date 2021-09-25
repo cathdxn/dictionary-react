@@ -83,9 +83,11 @@ footer a {
 
 .Synonyms {
   padding: 0px;
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   font-size: 14 px;
   font-weight: lighter;
+  text-align: center;
 }
 .Synonyms .each {
   list-style-type: none;
@@ -95,5 +97,5 @@ footer a {
 }
 .Photos img {
   border-radius: 5px;
-  min-width: fit-content;
+  max-width: 100%;
 }

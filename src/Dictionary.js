@@ -52,8 +52,7 @@ export default function Dictionary(props) {
             />
           </form>
           <div className="suggestions">
-            Suggested searches: environment, conservation, sustainability,
-            ecosystem...
+            Suggested searches: definition, synonym, noun, verb, exclamation...
           </div>
         </section>
         <Results results={results} />
