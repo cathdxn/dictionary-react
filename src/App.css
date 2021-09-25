@@ -1,22 +1,95 @@
-.App {
+body {
   background: radial-gradient(
-    592px at 48.2% 50%,
-    rgba(255, 255, 249, 0.6) 0%,
-    rgb(160, 199, 254) 74.6%
+    circle at 7.4% 45.1%,
+    rgb(236, 206, 251) 0%,
+    rgb(205, 237, 246) 45.1%,
+    rgb(227, 251, 252) 78.4%,
+    rgb(230, 247, 235) 90%
   );
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0;
   padding-top: 5px;
+  color: rgb(58, 58, 58);
 }
 
 section {
   max-width: 800px;
   display: block;
   margin: auto;
-  background-color: rgb(220, 235, 255);
-  border-radius: 4px;
-  margin: 5px;
-  padding: 5px;
+  background-color: #f9fdff;
+  border-radius: 6px;
+  margin: 8px auto;
+  padding: 12px 20px;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 10%);
+}
+
+h1 {
+  font-size: 20px;
+  text-align: center;
 }
 
 form input {
   width: 100%;
+  border: 1px solid rgb(185, 185, 185);
+  padding: 5px;
+  border-radius: 6px;
+}
+form input:focus {
+  outline: 0px;
+  box-shadow: 1px 1px 1px 1px rgba(202, 202, 202, 0.35);
+}
+
+footer,
+footer a {
+  color: #6b6b6b;
+  text-decoration: none;
+  margin: 30px 0px 5px 0px;
+  text-align: center;
+}
+.suggestions {
+  opacity: 0.7;
+  font-size: 12px;
+  margin: 0px 10px;
+}
+
+.Phonetic .audio-link {
+  border: 1px solid rgb(118, 185, 204);
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 15px;
+  transition: all 50ms ease-in-out;
+  color: rgb(118, 185, 204);
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 40px;
+}
+.Phonetic .audio-link:hover {
+  background-color: rgb(118, 185, 204);
+  color: #f9fdff;
+}
+.Phonetic .text {
+  font-style: oblique;
+  opacity: 0.6;
+}
+.Meaning p {
+  margin-top: 20px;
+}
+.Meaning .example {
+  color: #70757a;
+  font-style: oblique;
+  margin-top: 20px;
+}
+
+.Synonyms {
+  padding: 0px;
+  margin-top: 20px;
+  font-size: 14 px;
+  font-weight: lighter;
+}
+.Synonyms .each {
+  list-style-type: none;
+  display: inline-flex;
+  justify-content: space-evenly;
+  margin: 10px 10px 0px 0px;
 }

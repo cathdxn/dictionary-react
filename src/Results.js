@@ -3,29 +3,29 @@ import Meaning from "./Meaning";
 import Phonetic from "./Phonetic";
 
 export default function Dictionary(props) {
-  console.log(props.results);
   if (props.results) {
     return (
       <div className="Results">
         <section>
           <h2>{props.results.word}</h2>
-        </section>
-        {props.results.phonetics.map(function (phonetic, index) {
-          return (
-            <div key={index}>
-              <Phonetic phonetic={phonetic} />
-            </div>
-          );
-        })}
-        <div>
-          {props.results.meanings.map(function (meaning, index) {
+
+          {props.results.phonetics.map(function (phonetic, index) {
             return (
-              <div key={index}>
-                <Meaning meaning={meaning} />
-              </div>
+              <span key={index}>
+                <Phonetic phonetic={phonetic} />
+              </span>
             );
           })}
-        </div>
+        </section>
+        <span>
+          {props.results.meanings.map(function (meaning, index) {
+            return (
+              <span key={index}>
+                <Meaning meaning={meaning} />
+              </span>
+            );
+          })}
+        </span>
       </div>
     );
   } else {
